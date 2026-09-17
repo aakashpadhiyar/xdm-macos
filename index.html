@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="XDM New: an open-source, macOS-focused download manager.">
+    <title>XDM New — download management for macOS</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="XDM New home">
+        <img src="assets/xdm-new-logo.png" alt="XDM New logo">
+        <span>XDM <b>New</b></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#browser">Browser integration</a>
+        <a href="#source">Source</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">OPEN SOURCE · MACOS</p>
+          <h1>Downloads, under your control.</h1>
+          <p class="lead">XDM New is a native macOS download manager with smart segmented downloads, pause/resume, browser handoff, and practical file controls.</p>
+          <div class="actions">
+            <a class="button primary" href="https://raw.githubusercontent.com/aakashpadhiyar/XDM-NEW/main/releases/XDM-New-macOS-0.1.0.zip">Download macOS test build</a>
+            <a class="button secondary" href="https://github.com/aakashpadhiyar/XDM-NEW">View source on GitHub</a>
+          </div>
+          <p class="fine-print">Version 0.1.0 · ad-hoc signed for local testing · not Apple-notarized</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <div class="download-card">
+            <span class="file-icon">↓</span>
+            <div><strong>download.mov</strong><small>8 connections · 74%</small></div>
+            <em>11.8 MB/s</em>
+          </div>
+          <div class="progress"><span></span></div>
+          <div class="download-card muted">
+            <span class="file-icon">✓</span>
+            <div><strong>project-assets.zip</strong><small>Completed · Finder ready</small></div>
+            <em>Open</em>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <p class="eyebrow">BUILT FOR THE MAC</p>
+        <h2>Faster when a server supports it.<br>Reliable when it does not.</h2>
+        <div class="feature-grid">
+          <article><span>01</span><h3>Smart connections</h3><p>Use 1–20 byte-range connections per supported file. XDM New safely falls back to a single connection when a server does not support ranges.</p></article>
+          <article><span>02</span><h3>Downloads that resume</h3><p>Paused segments are kept together in a hidden <code>.XDM</code> cache in the chosen download folder, then merged and cleaned after completion.</p></article>
+          <article><span>03</span><h3>File actions that feel native</h3><p>Preview partial video, reveal in Finder, open with your default app, or choose another installed macOS application.</p></article>
+          <article><span>04</span><h3>Control the queue</h3><p>Choose your appearance, download destination, up to 10 active downloads, and up to 20 connections per download in Settings.</p></article>
+        </div>
+      </section>
+
+      <section id="browser" class="section panel-section">
+        <div>
+          <p class="eyebrow">BROWSER INTEGRATION</p>
+          <h2>Bring downloads from the browser to the app.</h2>
+          <p>Chrome uses an open local-loopback extension. Firefox can use the included development extension and can also communicate with the original XDM Firefox Browser Monitor protocol.</p>
+        </div>
+        <div class="integration-links">
+          <a href="https://github.com/aakashpadhiyar/XDM-NEW/tree/main/macOS/chrome-extension"><b>Chrome extension</b><span>Source & manual install →</span></a>
+          <a href="https://github.com/aakashpadhiyar/XDM-NEW/tree/main/macOS/firefox-extension"><b>Firefox extension</b><span>Source & manual install →</span></a>
+        </div>
+      </section>
+
+      <section id="source" class="section source-section">
+        <p class="eyebrow">THE PROJECT</p>
+        <h2>Open source from app to extension.</h2>
+        <p>The project builds on the historical Xtreme Download Manager source while the modern macOS app and loopback Chrome extension are newly written. Complete corresponding source, build instructions, and notices are published on GitHub.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/aakashpadhiyar/XDM-NEW">XDM New source</a>
+          <a class="button secondary" href="https://github.com/subhra74/xdm">Historical XDM source</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 XDM New contributors</span>
+      <span><a href="https://github.com/aakashpadhiyar/XDM-NEW/blob/main/NOTICE.md">Notices & licensing</a> · GPL-2.0-or-later for new macOS code</span>
+    </footer>
+  </body>
+</html>
