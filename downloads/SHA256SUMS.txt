@@ -1,2 +1,2 @@
-63b20d22a98712af684d3a08450df293e38bd7f57880a1a192e06468984f8012  XDM-New-Chrome-extension-0.1.0.zip
-d6311644c6ed3bca09d11654acc1a5595596ab796e5f53de0e2c5968af630a41  XDM-New-Firefox-extension-0.1.0.xpi
+30ea4564e2378b281190d0475ee3f4738184cb9303204a165b41c4e8ab1eb6be  XDM-New-Chrome-extension-0.1.1.zip
+b27fc012ef2b0746baa465aaa233e05ce373a7de93dade3f5fd7972ba19dedfe  XDM-New-Firefox-extension-0.1.1.xpi
