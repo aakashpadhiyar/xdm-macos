@@ -16,6 +16,7 @@
       <nav aria-label="Main navigation">
         <a href="#features">Features</a>
         <a href="#browser">Browser integration</a>
+        <a href="#extensions">Extensions</a>
         <a href="#source">Source</a>
       </nav>
     </header>
@@ -63,12 +64,33 @@
         <div>
           <p class="eyebrow">BROWSER INTEGRATION</p>
           <h2>Bring downloads from the browser to the app.</h2>
-          <p>Chrome uses an open local-loopback extension. Firefox can use the included development extension and can also communicate with the original XDM Firefox Browser Monitor protocol.</p>
+          <p>Install the XDM New browser monitor to send direct browser downloads to the local app. XDM New creates the user-level native browser bridge from Settings; the extension remains off until you enable monitoring.</p>
         </div>
         <div class="integration-links">
-          <a href="https://github.com/aakashpadhiyar/XDM-NEW/tree/main/macOS/chrome-extension"><b>Chrome extension</b><span>Source & manual install →</span></a>
-          <a href="https://github.com/aakashpadhiyar/XDM-NEW/tree/main/macOS/firefox-extension"><b>Firefox extension</b><span>Source & manual install →</span></a>
+          <a href="#extensions"><b>Chrome extension</b><span>Get the developer upload package →</span></a>
+          <a href="#extensions"><b>Firefox extension</b><span>Get the developer upload package →</span></a>
         </div>
+      </section>
+
+      <section id="extensions" class="section extensions-section">
+        <p class="eyebrow">BROWSER EXTENSIONS</p>
+        <h2>Upload-ready packages.</h2>
+        <p class="section-lead">These archives are the exact source packages for the browser developer portals. They are open source, have no remote code, and contain the manifest at the archive root.</p>
+        <div class="extension-grid">
+          <article class="extension-card">
+            <p class="browser-mark">CHROME</p>
+            <h3>Chrome Web Store</h3>
+            <p>Upload this ZIP from your Chrome Web Store developer dashboard. Once Google publishes the listing, replace this package link with your store-install URL.</p>
+            <a class="button primary" href="downloads/XDM-New-Chrome-extension-0.1.0.zip" download>Download Chrome ZIP</a>
+          </article>
+          <article class="extension-card">
+            <p class="browser-mark">FIREFOX</p>
+            <h3>Firefox Add-ons</h3>
+            <p>Upload this XPI to Firefox Add-ons (AMO) for signing. Once Mozilla publishes or signs it, link users to the AMO install page.</p>
+            <a class="button primary" href="downloads/XDM-New-Firefox-extension-0.1.0.xpi" download>Download Firefox XPI</a>
+          </article>
+        </div>
+        <p class="fine-print">Verify the files before upload with <a href="downloads/SHA256SUMS.txt">SHA-256 checksums</a>. Chrome on macOS installs from the Chrome Web Store; Firefox installs signed add-ons from AMO.</p>
       </section>
 
       <section id="source" class="section source-section">
