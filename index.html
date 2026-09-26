@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="XDM New: an open-source, macOS-focused download manager.">
+    <meta name="description" content="Download XDM New 0.0.9, a macOS-focused download manager with segmented downloads, browser monitoring, streaming-media capture, and native file controls.">
     <title>XDM New — download management for macOS</title>
+    <link rel="canonical" href="https://aakashpadhiyar.github.io/xdm-macos/">
+    <meta property="og:title" content="XDM New — download management for macOS">
+    <meta property="og:description" content="Fast segmented downloads, browser monitoring, streaming-media capture, and native macOS controls.">
+    <meta property="og:url" content="https://aakashpadhiyar.github.io/xdm-macos/">
+    <meta property="og:image" content="https://aakashpadhiyar.github.io/xdm-macos/assets/xdm-new-logo.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -17,7 +22,7 @@
         <a href="#features">Features</a>
         <a href="#browser">Browser integration</a>
         <a href="#extensions">Extensions</a>
-        <a href="#source">Source</a>
+        <a href="#release">Release</a>
       </nav>
     </header>
 
@@ -28,10 +33,10 @@
           <h1>Downloads, under your control.</h1>
           <p class="lead">XDM New is a native macOS download manager with smart segmented downloads, pause/resume, browser handoff, and practical file controls.</p>
           <div class="actions">
-            <a class="button primary" href="https://github.com/aakashpadhiyar/XDM-NEW/releases/download/0.0.1/XDM-New-macOS-0.0.1.zip">Download macOS test build</a>
-            <a class="button secondary" href="https://github.com/aakashpadhiyar/XDM-NEW">View source on GitHub</a>
+            <a class="button primary" href="https://github.com/aakashpadhiyar/Xtreme-Download-Manager-Releases/releases/download/0.0.9/XDM-New-macOS-0.0.9.zip">Download for macOS</a>
+            <a class="button secondary" href="https://github.com/aakashpadhiyar/Xtreme-Download-Manager-Releases/releases/tag/0.0.9">View release notes</a>
           </div>
-          <p class="fine-print">Version 0.0.1 · ad-hoc signed for local testing · not Apple-notarized</p>
+          <p class="fine-print">Version 0.0.9 · macOS 14 or later · ad-hoc signed · not Apple-notarized</p>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="window-dots"><i></i><i></i><i></i></div>
@@ -47,6 +52,15 @@
             <em>Open</em>
           </div>
         </div>
+      </section>
+
+      <section class="section release-strip" aria-label="Current release">
+        <div>
+          <p class="eyebrow">CURRENT RELEASE</p>
+          <h2>Version 0.0.9</h2>
+          <p>Includes the latest macOS application and browser monitor 0.3.1 packages. The macOS archive SHA-256 is <code>8ee387ba47d6e8d3ded156115383419c91590debbe436e319a2d3bbe116c8d51</code>.</p>
+        </div>
+        <a class="button secondary" href="https://github.com/aakashpadhiyar/Xtreme-Download-Manager-Releases/releases/tag/0.0.9">All 0.0.9 downloads</a>
       </section>
 
       <section id="features" class="section">
@@ -75,39 +89,43 @@
 
       <section id="extensions" class="section extensions-section">
         <p class="eyebrow">BROWSER EXTENSIONS</p>
-        <h2>Upload-ready packages.</h2>
-        <p class="section-lead">These archives are the exact source packages for the browser developer portals. They are open source, have no remote code, and contain the manifest at the archive root.</p>
+        <h2>Browser monitor 0.3.1.</h2>
+        <p class="section-lead">Use the matching browser monitor to hand downloads and detected media to the locally running XDM New application.</p>
         <div class="extension-grid">
           <article class="extension-card">
             <p class="browser-mark">CHROME</p>
-            <h3>Chrome Web Store</h3>
-            <p>Upload this ZIP from your Chrome Web Store developer dashboard. Once Google publishes the listing, replace this package link with your store-install URL.</p>
-            <a class="button primary" href="downloads/XDM-New-Chrome-extension-0.1.1.zip" download>Download Chrome ZIP</a>
+            <h3>Chrome developer bundle</h3>
+            <p>Download the 0.3.1 ZIP for developer-mode installation or Chrome Web Store submission.</p>
+            <a class="button primary" href="https://github.com/aakashpadhiyar/Xtreme-Download-Manager-Releases/releases/download/0.0.9/XDM-New-Chrome-extension-0.3.1.zip">Download Chrome ZIP</a>
           </article>
           <article class="extension-card">
             <p class="browser-mark">FIREFOX</p>
             <h3>Firefox Add-ons</h3>
-            <p>Upload this XPI to Firefox Add-ons (AMO) for signing. Once Mozilla publishes or signs it, link users to the AMO install page.</p>
-            <a class="button primary" href="downloads/XDM-New-Firefox-extension-0.1.1.xpi" download>Download Firefox XPI</a>
+            <p>Install from Mozilla Add-ons, or download the matching 0.3.1 XPI bundle from the release.</p>
+            <div class="card-actions">
+              <a class="button primary" href="https://addons.mozilla.org/en-US/firefox/addon/xdm-new-browser-monitor/">Firefox Add-ons</a>
+              <a class="button secondary" href="https://github.com/aakashpadhiyar/Xtreme-Download-Manager-Releases/releases/download/0.0.9/XDM-New-Firefox-extension-0.3.1.xpi">Download XPI</a>
+            </div>
           </article>
         </div>
-        <p class="fine-print">Verify the files before upload with <a href="downloads/SHA256SUMS.txt">SHA-256 checksums</a>. Chrome on macOS installs from the Chrome Web Store; Firefox installs signed add-ons from AMO.</p>
+        <p class="fine-print">The browser monitor requires XDM New to be running with browser monitoring enabled. The original XDM extension may also connect, but the original XDM application must be closed.</p>
       </section>
 
-      <section id="source" class="section source-section">
+      <section id="release" class="section source-section">
         <p class="eyebrow">THE PROJECT</p>
-        <h2>Open source from app to extension.</h2>
-        <p>The project builds on the historical Xtreme Download Manager source while the modern macOS app and loopback Chrome extension are newly written. Complete corresponding source, build instructions, and notices are published on GitHub.</p>
+        <h2>Built for macOS, with XDM roots.</h2>
+        <p>XDM New is an independent macOS-focused modernization based on the historical GPL-2.0 Xtreme Download Manager project. Public downloads, checksums, release notes, and support documentation are maintained in the release repository.</p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/aakashpadhiyar/XDM-NEW">XDM New source</a>
+          <a class="button primary" href="https://github.com/aakashpadhiyar/Xtreme-Download-Manager-Releases">Release repository</a>
           <a class="button secondary" href="https://github.com/subhra74/xdm">Historical XDM source</a>
         </div>
+        <p class="license-note">XDM New contains GPL-covered work. Distribution of modified executables requires access to the complete corresponding source under the applicable GPL terms.</p>
       </section>
     </main>
 
     <footer>
-      <span>© 2026 XDM New contributors</span>
-      <span><a href="https://github.com/aakashpadhiyar/XDM-NEW/blob/main/NOTICE.md">Notices & licensing</a> · GPL-2.0-or-later for new macOS code</span>
+      <span>© 2026 Aakash Padhiyar · XDM New</span>
+      <span><a href="https://github.com/aakashpadhiyar/Xtreme-Download-Manager-Releases">Documentation &amp; releases</a> · Based on GPL-2.0 XDM</span>
     </footer>
   </body>
 </html>
