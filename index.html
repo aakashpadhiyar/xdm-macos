@@ -22,7 +22,9 @@
         <a href="#features">Features</a>
         <a href="#browser">Browser integration</a>
         <a href="#extensions">Extensions</a>
+        <a href="#miss-minutes">Miss Minutes</a>
         <a href="#release">Release</a>
+        <a href="https://t.me/xtreme_download_manager" target="_blank" rel="noopener noreferrer">Telegram</a>
       </nav>
     </header>
 
@@ -111,6 +113,41 @@
         <p class="fine-print">The browser monitor requires XDM New to be running with browser monitoring enabled. The original XDM extension may also connect, but the original XDM application must be closed.</p>
       </section>
 
+      <section id="miss-minutes" class="section mascot-section">
+        <div class="mascot-heading">
+          <p class="eyebrow">THE XDM NEW COMPANION</p>
+          <h2>Meet Miss Minutes.</h2>
+          <p class="section-lead">Inspired by the playful timekeeper energy of Marvel’s TVA, Miss Minutes brings a bit of character to XDM New. Try her interactions below: she notices, reacts, and offers quick actions.</p>
+        </div>
+        <div class="mascot-demo">
+          <div class="mascot-stage" id="pet-stage" aria-label="Interactive Miss Minutes animation preview">
+            <div class="mascot-stage-grid" aria-hidden="true"></div>
+            <div class="mascot-status"><span></span><span id="stage-status-text">Standing by</span></div>
+            <button class="mascot-hit-area" id="pet-hit-area" type="button" aria-label="Miss Minutes. Click for quick actions, or drag her around.">
+              <span class="mascot-sprite" id="pet-sprite" aria-hidden="true"></span>
+            </button>
+            <div class="mascot-video-card" id="video-card" aria-live="polite" hidden>
+              <span class="mascot-play" aria-hidden="true">▶</span>
+              <span><b>Video detected</b><small>Miss Minutes is ready with two quick actions.</small></span>
+              <button class="mascot-dismiss" id="dismiss-detection" type="button" aria-label="Dismiss preview">×</button>
+            </div>
+            <div class="mascot-dock" id="pet-dock" hidden>
+              <button type="button" data-demo-action="videos"><span aria-hidden="true">▣</span> Detected videos</button>
+              <i aria-hidden="true"></i>
+              <button type="button" data-demo-action="link"><span aria-hidden="true">↗</span> Paste a link</button>
+            </div>
+          </div>
+          <div class="mascot-details">
+            <article><span>01</span><div><h3>She notices</h3><p>In XDM New, supported media detection gives Miss Minutes a cheerful wave.</p></div></article>
+            <article><span>02</span><div><h3>She follows along</h3><p>Move your pointer and watch her eyes follow. Drag her around the preview to see her run.</p></div></article>
+            <article><span>03</span><div><h3>She helps you act</h3><p>Click the mascot to open quick actions for detected videos or adding a link.</p></div></article>
+            <button class="button primary mascot-preview" id="preview-detection" type="button">✦ &nbsp; Preview video detection</button>
+            <p class="fine-print">Interactive website preview only. Actual browser media detection and downloads happen in the XDM New macOS app.</p>
+          </div>
+        </div>
+        <p class="mascot-legal">Miss Minutes is an XDM New mascot inspired by the retro timekeeper style of Marvel’s TVA. XDM New is independent and is not affiliated with or endorsed by Marvel or Disney.</p>
+      </section>
+
       <section id="release" class="section source-section">
         <p class="eyebrow">THE PROJECT</p>
         <h2>Built for macOS, with XDM roots.</h2>
@@ -118,6 +155,7 @@
         <div class="actions">
           <a class="button primary" href="https://github.com/aakashpadhiyar/xdm-macos">Project repository</a>
           <a class="button secondary" href="https://github.com/subhra74/xdm">Historical XDM source</a>
+          <a class="button secondary" href="https://t.me/xtreme_download_manager" target="_blank" rel="noopener noreferrer">Join Telegram</a>
         </div>
         <p class="license-note">XDM New contains GPL-covered work. Distribution of modified executables requires access to the complete corresponding source under the applicable GPL terms.</p>
       </section>
@@ -125,7 +163,8 @@
 
     <footer>
       <span>© 2026 Aakash Padhiyar · XDM New</span>
-      <span><a href="https://github.com/aakashpadhiyar/xdm-macos">Documentation &amp; releases</a> · Based on GPL-2.0 XDM</span>
+      <span><a href="https://github.com/aakashpadhiyar/xdm-macos">Documentation &amp; releases</a> · <a href="https://t.me/xtreme_download_manager" target="_blank" rel="noopener noreferrer">Telegram channel</a> · Based on GPL-2.0 XDM</span>
     </footer>
+    <script src="miss-minutes.js" defer></script>
   </body>
 </html>
